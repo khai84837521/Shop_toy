@@ -4,7 +4,7 @@ package com.example.shop_toy.application.order;
 import com.example.shop_toy.domain.order.OrderCommand;
 import com.example.shop_toy.domain.order.OrderInfo;
 import com.example.shop_toy.domain.order.OrderService;
-import com.example.shop_toy.order.OrderDto;
+import com.example.shop_toy.interfaces.order.OrderDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;

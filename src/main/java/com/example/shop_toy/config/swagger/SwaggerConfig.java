@@ -68,7 +68,7 @@ public class SwaggerConfig {
                 .apiInfo(this.apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors
-                        .basePackage("com.parkjinhun.shopping.shopping_mall_project.interfaces"))
+                        .basePackage("com.example.shop_toy.interfaces"))
                 .paths(PathSelectors.ant("/api/v1/**"))
                 .build();
     }

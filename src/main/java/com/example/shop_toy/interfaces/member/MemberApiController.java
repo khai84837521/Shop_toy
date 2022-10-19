@@ -1,4 +1,4 @@
-package com.example.shop_toy.member;
+package com.example.shop_toy.interfaces.member;
 
 
 import com.example.shop_toy.application.member.MemberFacade;

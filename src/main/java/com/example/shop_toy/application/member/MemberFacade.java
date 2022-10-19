@@ -5,7 +5,7 @@ import com.example.shop_toy.domain.member.MemberCommand;
 import com.example.shop_toy.domain.member.MemberInfo;
 import com.example.shop_toy.domain.member.MemberService;
 import com.example.shop_toy.domain.member.token.TokenInfo;
-import com.example.shop_toy.member.MemberDto;
+import com.example.shop_toy.interfaces.member.MemberDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

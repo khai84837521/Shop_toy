@@ -5,7 +5,7 @@ import com.example.shop_toy.common.exception.BaseException;
 import com.example.shop_toy.common.exception.InvalidParamException;
 import com.example.shop_toy.common.response.ErrorCode;
 import com.example.shop_toy.common.util.jwt.JwtTokenProvider;
-import com.example.shop_toy.order.OrderDto;
+import com.example.shop_toy.interfaces.order.OrderDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;

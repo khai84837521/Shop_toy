@@ -4,7 +4,7 @@ package com.example.shop_toy.infrastructure.order;
 import com.example.shop_toy.common.exception.EntityNotFoundException;
 import com.example.shop_toy.domain.order.Order;
 import com.example.shop_toy.domain.order.OrderReader;
-import com.example.shop_toy.order.OrderDto;
+import com.example.shop_toy.interfaces.order.OrderDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;

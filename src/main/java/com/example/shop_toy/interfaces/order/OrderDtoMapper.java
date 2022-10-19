@@ -1,4 +1,4 @@
-package com.example.shop_toy.order;
+package com.example.shop_toy.interfaces.order;
 
 
 import com.example.shop_toy.domain.order.OrderCommand;

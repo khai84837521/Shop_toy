@@ -4,7 +4,6 @@ package com.example.shop_toy.common.util.jwt;
 import com.example.shop_toy.common.exception.BaseException;
 import com.example.shop_toy.common.exception.InvalidParamException;
 import com.example.shop_toy.common.response.ErrorCode;
-import com.example.shop_toy.common.util.redis.RedisUtil;
 import com.example.shop_toy.domain.member.token.TokenInfo;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
@@ -36,10 +35,8 @@ public class JwtTokenProvider {
 
     private final Key key;
 
-    private final RedisUtil redisUtil;
 
-    public JwtTokenProvider(@Value("${jwt.secret}") String secretKey, RedisUtil redisUtil) {
-        this.redisUtil = redisUtil;
+    public JwtTokenProvider(@Value("${jwt.secret}") String secretKey) {
         byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         this.key = Keys.hmacShaKeyFor(keyBytes);
     }
@@ -99,7 +96,7 @@ public class JwtTokenProvider {
     public boolean validateToken(String token) {
         try {
             Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token);
-            return !redisUtil.hasKeyBlackList(token);
+            return true;
         } catch (io.jsonwebtoken.security.SecurityException | MalformedJwtException e) {
 //            log.info("Invalid JWT Token", e);
             throw new BaseException(ErrorCode.MEMBER_FAIL_INVALID_TOKEN);

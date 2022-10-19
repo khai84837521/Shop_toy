@@ -2,7 +2,7 @@ package com.example.shop_toy.domain.member;
 
 
 import com.example.shop_toy.domain.member.token.TokenInfo;
-import com.example.shop_toy.member.MemberDto;
+import com.example.shop_toy.interfaces.member.MemberDto;
 
 public interface MemberService {
     MemberInfo registerMember(MemberCommand.RegisterMember command);

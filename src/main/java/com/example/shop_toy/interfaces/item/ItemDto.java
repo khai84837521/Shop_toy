@@ -1,4 +1,4 @@
-package com.example.shop_toy.item;
+package com.example.shop_toy.interfaces.item;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

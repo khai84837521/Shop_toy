@@ -1,4 +1,4 @@
-package com.example.shop_toy.item;
+package com.example.shop_toy.interfaces.item;
 
 
 import com.example.shop_toy.application.item.ItemFacade;
